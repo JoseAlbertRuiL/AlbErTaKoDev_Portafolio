@@ -7,7 +7,7 @@ const navLinks = [
 
 ];
 
-export const Navbar = () => { // Componente de barra de navegación con efecto de cristal y el menu basico para movil con modelo hamburguesa
+export const Navbar = () => { //componente de barra de navegación con efecto de cristal y el menu basico para movil con modelo hamburguesa
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 

@@ -4,7 +4,6 @@ export const Hero = () => {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-
       {/* Grid sutil de fondo */}
       <div
         className="absolute inset-0 opacity-5 pointer-events-none"
@@ -17,7 +16,7 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
 
-        {/* Badge */}
+        {/* Etiqueta de disponibilidad */}
         <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-8">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
           <span className="text-sm font-medium text-muted-foreground">
@@ -41,7 +40,7 @@ export const Hero = () => {
         {/* Descripción */}
         <p className="max-w-xl mx-auto text-base md:text-lg mb-10 leading-relaxed text-muted-foreground">
           Construyo experiencias digitales elegantes, rápidas e intuitivas.
-          Apasionado por el código limpio y el diseño con propósito.
+          Adaptabilidad a cualquier necesidad o requerimiento.
         </p>
  
       </div>
