@@ -26,7 +26,7 @@ export const Hero = () => {
         </div>
 
         {/* Nombre */}
-        <h1 className="font-serif text-6xl md:text-8xl font-bold mb-4 leading-none tracking-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight tracking-tight">
           <span className="text-foreground">Alber</span>
           <span className="text-primary">Tako</span>
           <span className="text-foreground">Dev</span>
