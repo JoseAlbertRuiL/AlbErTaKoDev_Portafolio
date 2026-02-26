@@ -25,7 +25,7 @@ export const Navbar = () => {
       <nav className="container mx-auto px-6 flex items-center justify-between">
 
         {/* Logo siempre visible */}
-        <a href="#" className="text-xl font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity duration-200">
+        <a href="#" className="text-lg font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity duration-200 shrink-0">
           AlbErTaKo<span className="text-primary">Dev</span>
         </a>
 
@@ -65,7 +65,7 @@ export const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile menu desplegable */}
+      {/* Mobile  menu desplegable */}
       {menuOpen && (
         <div className="flex flex-col md:hidden mx-4 mt-2 glass rounded-2xl p-4 gap-1">
           {navLinks.map((link, i) => (
