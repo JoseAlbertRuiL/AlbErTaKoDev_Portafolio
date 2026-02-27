@@ -21,6 +21,11 @@
 
   --color-highlight: #f5a623;
   --color-surface: #1a2329;
+
+  --animate-spin-slow: spin-slow 10s linear infinite;
+
+   /* Lluvia animacion infinita*/
+  --animate-rain-fall: rain-fall 6s linear infinite;
 } 
 
 @layer base {
@@ -36,12 +41,21 @@
     font-family: "Playfair Display", serif;
   }
 }
-
+/* Caida de lluvia (animacion) */
+@keyframes rain-fall {
+  0%   { transform: translateY(-120px); opacity: 0;   }
+  10%  { opacity: 100; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(110vh);  opacity: 0;   }
+}
 @layer components {
   .glass { 
     background-color: color-mix(in srgb var(--color-surface) 50%, transparent);
-    backdrop-filter: blur(16px);
-    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+    backdrop-filter: blur(6px); /* Efecto de desenfoque cuando se scrolle */
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent); /* Borde sutil para mejorar la visibilidad del navbar */
   }
 }
 
+@keyframes spin-slow {
+  from { transform: rotate(360deg); }
+}

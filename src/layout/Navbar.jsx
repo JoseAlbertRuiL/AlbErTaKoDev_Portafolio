@@ -19,7 +19,7 @@ export const Navbar = () => { //componente de barra de navegación con efecto de
 
   return ( 
     <header
-      className={`fixed top-0 left-0 right-0 py-4 transition-all duration-300 z-[9999]
+      className={`fixed top-0 left-0 right-0 py-4 transition-all duration-300 z-[999]
         ${scrolled ? "glass border-b border-border/50" : "bg-transparent border-b border-transparent"}`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
